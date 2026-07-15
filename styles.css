@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color: rgb(242, 242, 236);
+    --text-color: rgb(200, 196, 184);
+     --text-color-dark: #696864;
+    --black: rgb(23, 23, 23);
+    --white: rgb(249, 249, 249);
+}
+
+body {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    background-color: var(--accent-color);
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 400px;
+    height: 390px;
+    gap: 30px;
+    border-radius: 1rem;
+    box-shadow: -6px 5px 24px rgba(30, 30, 30, 0.15);
+}
+
+.quote-icon {
+    font-family: "Playfair Display";
+    font-size: 64px;
+    color: var(--text-color);
+    line-height: .1;
+}
+
+.quote-body {
+    font-family: "Playfair Display";
+    font-size: 22px;
+    width: 80%;
+    text-align: center;
+}
+
+.author {
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.btns {
+    display: flex;
+    gap :16px;
+}
+button {
+    border: 1px solid var(--text-color);
+    border-radius: 2rem;
+    padding: 14px 22px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+button:active {
+    scale: 96%;
+}
+
+.copy-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: var(--white);
+    color: var(--text-color-dark);
+}
+
+.copy-icon {
+    width: 18px;
+}
+
+.new-quote-btn {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.quote-tally {
+    font-size: 12px;
+    color: var(--text-color);
+}
+

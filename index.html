@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Quote Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <main>
+        <div class="main-content">
+            <div class="container">
+                <div class="quote-icon">&#8220</div>
+                <p id="quote-body" class="quote-body">The only way to do great work is to love what you do.</p>
+                <p class="author">&mdash; <span id="author-name" class="author-name">Steve Jobs</span></p>
+                <div class="btns">
+                    <button id="new-quote-btn" class="new-quote-btn">New quote</button>
+                    <button id="copy-btn" class="copy-btn"><img class="copy-icon" src="img/content_copy_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg">Copy</button>
+                </div>
+                <p id="quote-tally" class="quote-tally">Quote 4 of this session</p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
