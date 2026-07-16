@@ -49,18 +49,25 @@ body {
     font-size: 22px;
     width: 80%;
     text-align: center;
+    opacity: 1;
+    transition: .5s;
 }
 
 .author {
     text-transform: uppercase;
     color: var(--text-color);
     font-size: 14px;
+    opacity: 1;
+    transition: .5s;
 }
 
 .btns {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap :16px;
 }
+
 button {
     border: 1px solid var(--text-color);
     border-radius: 2rem;
@@ -88,6 +95,10 @@ button:active {
     width: 18px;
 }
 
+.disable {
+    display: none;
+}
+
 .new-quote-btn {
     background-color: var(--black);
     color: var(--white);
@@ -98,3 +109,16 @@ button:active {
     color: var(--text-color);
 }
 
+.fade-out {
+    opacity: 0;
+}
+
+.btn-disabled {
+    background-color: rgb(216, 216, 216);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.btn-pointer-disabled {
+    pointer-events: none;
+}
